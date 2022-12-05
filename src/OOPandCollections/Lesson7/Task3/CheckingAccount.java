@@ -13,4 +13,8 @@ public class CheckingAccount extends BankAccount{
     public void withdraw() {
 
     }
+
+    void check(){
+
+    }
 }

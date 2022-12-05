@@ -12,4 +12,8 @@ public class SavingAccount extends BankAccount{
     public void withdraw() {
 
     }
+
+    void save(){
+
+    }
 }
