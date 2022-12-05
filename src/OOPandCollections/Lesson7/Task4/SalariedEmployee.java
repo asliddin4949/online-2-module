@@ -1,13 +1,14 @@
 package OOPandCollections.Lesson7.Task4;
 
-public class SalariedEmployee extends Person {
+public class SalariedEmployee extends Person implements Office {
 
-   double weeklyPay;
+    double weeklyPay;
 
     public void setWage() {
 
     }
-    public void moveOffice(){
+
+    public void moveOffice() {
 
     }
 
@@ -28,6 +29,26 @@ public class SalariedEmployee extends Person {
 
     @Override
     public void setName(String name) {
+
+    }
+
+    @Override
+    public void setNumber() {
+
+    }
+
+    @Override
+    public void getNumber() {
+
+    }
+
+    @Override
+    public void setOccupant() {
+
+    }
+
+    @Override
+    public void getOccupant() {
 
     }
 }

@@ -1,6 +1,6 @@
 package OOPandCollections.Lesson7.Task4;
 
-public class HourlyEmployee extends Person implements Employee{
+public class HourlyEmployee extends Person{
 
    double hourlyRate;
    int jobID;
