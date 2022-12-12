@@ -21,8 +21,6 @@ public class Main {
         System.out.println("===\"up from 400\" are deleted===");
         linkedHashSet.forEach(System.out::println);
 
-
-
     }
 
     static Integer getRandom() {
