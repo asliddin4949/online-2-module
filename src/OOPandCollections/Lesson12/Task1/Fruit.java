@@ -12,6 +12,22 @@ public class Fruit {
 
     }
 
+    public void setSale(int sale) {
+        this.sale = sale;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getSale() {
+        return sale;
+    }
+
     @Override
     public String toString() {
         return "Fruit{" +

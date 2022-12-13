@@ -34,8 +34,8 @@ public class Main {
         fruits.put(olma2, 8000D);
         fruits.put(olma3, 15000D);
         fruits.put(olma4, 6000D);
-        fruits.put(banan1, 3000D*(100- banan1.sale));
-        fruits.put(banan2, 3000D*(100- banan2.sale));
+        fruits.put(banan1, 30000D*((100- banan1.sale)/100D));
+        fruits.put(banan2, 20000D*((100- banan1.sale)/100D));
         fruits.put(shaftoli1,6000D);
         fruits.put(shaftoli2,8000D);
         fruits.put(kivi1,21000D);
