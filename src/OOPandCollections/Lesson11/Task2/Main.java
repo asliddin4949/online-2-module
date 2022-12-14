@@ -1,15 +1,25 @@
 package OOPandCollections.Lesson11.Task2;
 
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
         LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
         for (int i = 0; i < 100; i++) {
-            linkedHashSet.add(getRandom());
+            int num = getRandom();
+            if (linkedHashSet.contains(num)){
+                i--;
+            }else {
+                linkedHashSet.add(num);
+            }
         }
+
         linkedHashSet.forEach(System.out::println);
+
+        System.out.println("===\"up from 400\" are deleted===");
 
         Iterator<Integer> iterator = linkedHashSet.iterator();
 
@@ -18,13 +28,11 @@ public class Main {
                 iterator.remove();
             }
         }
-        System.out.println("===\"up from 400\" are deleted===");
         linkedHashSet.forEach(System.out::println);
-
     }
 
-    static Integer getRandom() {
-        Integer num = (int) (Math.random() * 1000);
+    static int getRandom() {
+        int num = (int) (Math.random() * 1000);
         if (num > 299 && num < 501) {
             return num;
         } else {
